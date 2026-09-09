@@ -1,0 +1,7 @@
+# Arquivos e pastas do Dart/IDE que não precisam ser enviados
+.dart_tool/
+.packages
+build/
+.idea/
+.vscode/
+*.iml

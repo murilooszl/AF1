@@ -106,23 +106,7 @@ A função `main()` demonstra:
 
 ```text
 SkyHorizon_Avaliacao_Formativa_I/
-├── main.dart
-├── README.md
-└── .gitignore
-```
-
-## Como executar
-
-É necessário ter o **Dart SDK** instalado.
-
-No terminal, dentro da pasta do projeto:
-
-```bash
-dart run main.dart
-```
-
-Também pode ser executado diretamente com:
-
-```bash
-dart main.dart
+- main.dart
+- README.md
+- .gitignore
 ```

@@ -1,10 +1,4 @@
-// Avaliação Formativa I - Programação para Dispositivos Móveis
-// SkyHorizon Airlines
-// Implementação dos Exercícios 1 a 10 em um único arquivo executável.
-
-// ============================================================
 // Exercício 1: Abstração e Classes de Apoio
-// ============================================================
 
 class Passageiro {
   String? nome;
@@ -28,9 +22,8 @@ class Atendente {
   double? salario;
 }
 
-// ============================================================
+// ___________________________________________________________
 // Exercício 2: Agregação e Construtor Não Nomeado
-// ============================================================
 
 class Passagem {
   String? _codigoLocalizador = '';
@@ -43,9 +36,8 @@ class Passagem {
   // Construtor não nomeado.
   Passagem();
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 3: Construtores Nomeados
-  // ==========================================================
 
   Passagem.somenteCodigo(String codigoLocalizador)
       : _codigoLocalizador = codigoLocalizador;
@@ -62,9 +54,8 @@ class Passagem {
         atendente = atendente,
         observacoes = observacoes;
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 4: Parâmetros Nomeados
-  // ==========================================================
 
   Passagem.codigoEPassageiro({
     String? codigoLocalizador,
@@ -79,9 +70,8 @@ class Passagem {
     this.observacoes,
   }) : _codigoLocalizador = codigoLocalizador;
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 5: Encapsulamento com Getter/Setter tradicionais
-  // ==========================================================
 
   String? getCodigoLocalizador() {
     return _codigoLocalizador;
@@ -96,10 +86,9 @@ class Passagem {
     _codigoLocalizador = codigoLocalizador;
   }
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 6: Getters e Setters nativos do Dart
-  // ==========================================================
-
+  
   String? get codigoLocalizador => _codigoLocalizador;
 
   set codigoLocalizador(String? codigoLocalizador) {
@@ -111,9 +100,8 @@ class Passagem {
     _codigoLocalizador = codigoLocalizador;
   }
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 7: Comportamentos e Métodos de Negócio
-  // ==========================================================
 
   void EmitirPassagem() {
     print('Passagem emitida com sucesso!');
@@ -134,9 +122,8 @@ class Passagem {
   }
 }
 
-// ============================================================
+// ___________________________________________________________
 // Exercício 9: Mixins para Log e Auditoria
-// ============================================================
 
 mixin Logger {
   void log(String mensagem) {
@@ -150,10 +137,9 @@ mixin Auditoria {
   }
 }
 
-// ============================================================
+// ___________________________________________________________
 // Exercício 8: Especialização com Herança
 // Exercício 9: Aplicação dos Mixins
-// ============================================================
 
 class PassagemPrimeiraClasse extends Passagem with Logger, Auditoria {
   String? loungeAcesso;
@@ -173,9 +159,8 @@ class PassagemPrimeiraClasse extends Passagem with Logger, Auditoria {
           observacoes: observacoes,
         );
 
-  // ==========================================================
+  // ___________________________________________________________
   // Exercício 10: Sobrescrita Polimórfica
-  // ==========================================================
 
   @override
   void AtualizarPassagem() {
@@ -185,9 +170,8 @@ class PassagemPrimeiraClasse extends Passagem with Logger, Auditoria {
   }
 }
 
-// ============================================================
+// ___________________________________________________________
 // Exercício 10: Execução Geral
-// ============================================================
 
 void main() {
   print('========== SKYHORIZON AIRLINES ==========');
@@ -215,8 +199,8 @@ void main() {
     ..salario = 3500.00;
 
   // ----------------------------------------------------------
-  // Passagem padrão - construtor não nomeado.
-  // ----------------------------------------------------------
+  // Passagem padrão - (construtor não nomeado).
+ 
   print('--- Passagem padrão ---');
   final passagemPadrao = Passagem();
   passagemPadrao.passageiro = passageiro;
@@ -234,7 +218,7 @@ void main() {
 
   // ----------------------------------------------------------
   // Passagem usando o construtor all() com parâmetros nomeados.
-  // ----------------------------------------------------------
+
   print('--- Passagem com construtor all() ---');
   final passagemAll = Passagem.all(
     'SH002',
@@ -250,8 +234,8 @@ void main() {
   print('');
 
   // ----------------------------------------------------------
-  // Demonstração da validação do setter.
-  // ----------------------------------------------------------
+  // validação do setter.
+ 
   print('--- Validação de código ---');
   passagemAll.setCodigoLocalizador(null);
   passagemAll.codigoLocalizador = '';
@@ -260,7 +244,7 @@ void main() {
 
   // ----------------------------------------------------------
   // Outros construtores nomeados.
-  // ----------------------------------------------------------
+  
   print('--- Construtores nomeados adicionais ---');
   final somenteCodigo = Passagem.somenteCodigo('SH003');
   print('Somente código: ${somenteCodigo.codigoLocalizador}');
@@ -283,7 +267,7 @@ void main() {
 
   // ----------------------------------------------------------
   // Passagem Primeira Classe: herança + mixins + override.
-  // ----------------------------------------------------------
+ 
   print('--- Passagem Primeira Classe ---');
   final passagemVip = PassagemPrimeiraClasse(
     'VIP001',

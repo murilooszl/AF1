@@ -1,4 +1,4 @@
-# SkyHorizon Airlines - Avaliação Formativa I
+# Avaliação Formativa I - SkyHorizon Airlines
 
 Implementação da **Avaliação Formativa I** da disciplina **Programação para Dispositivos Móveis**, utilizando **Dart com Null-Safety**, conforme o enunciado da atividade.
 
@@ -101,11 +101,6 @@ A função `main()` demonstra:
 - operações de emissão, atualização, consulta e cancelamento;
 - validação do código localizador;
 - outros construtores nomeados desenvolvidos nos exercícios anteriores.
-
-## Estrutura do projeto
-
-```text
-SkyHorizon_Avaliacao_Formativa_I/
 - main.dart
 - README.md
 - .gitignore

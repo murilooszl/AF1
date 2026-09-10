@@ -1,7 +1,6 @@
 # Avaliação Formativa I - SkyHorizon Airlines
 
-Implementação da **Avaliação Formativa I** da disciplina **Programação para Dispositivos Móveis**, utilizando **Dart com Null-Safety**, conforme o enunciado da atividade.
-
+Implementação da **Avaliação Formativa I** da disciplina **Programação para Dispositivos Móveis**, utilizando **Dart com Null-Safety**.
 ## Sobre a atividade
 
 O projeto representa o núcleo orientado a objetos do sistema de emissão de passagens da SkyHorizon Airlines. Os exercícios são interligados e foram consolidados em um único arquivo executável chamado `main.dart`, conforme solicitado no enunciado.
